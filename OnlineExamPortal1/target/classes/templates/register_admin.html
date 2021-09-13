@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Admin</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: lightgray;">
+	<div class="container text-center">
+
+		<h3>Logged in successfully as Admin !</h3><br>
+		<h4>Now you can view all the details of Student</h4><br><br><br>
+		</div>
+		<div style="text-align: left;">
+		<ol>
+		<li><h5>&nbsp;&nbsp;&nbsp;<a th:href="@{/students}">List of Student's</a></h5></li>
+		<li><h5><a class="nav-link" href="http://localhost:8080/marks">Marks of Student's</a></h5></li>
+		</ol>
+		</div>
+	</div>
+		<h5 style="position:relative; padding-top: 360px; width:100%; text-align: right"><a th:href="@{/main}">Home Page</a></h5>
+	
+	
+</body>
+</html>

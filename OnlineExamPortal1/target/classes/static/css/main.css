@@ -1,0 +1,19 @@
+
+footer {
+	position: fixed;
+ 	left: 0;
+ 	bottom: 0;
+  	width: 100%;
+ 	text-align: center;
+	text-align: center;
+	line-height: 50px;
+
+}
+body{
+		background-color: lightgray;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}

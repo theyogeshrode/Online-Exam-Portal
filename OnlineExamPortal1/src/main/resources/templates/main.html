@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Online Exam Portal</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" th:href="@{/css/main.css}">
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body >
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" th:fragment="navbar">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="/">Online Exam Portal</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+	       
+	       
+	        <li class="nav-item">
+	          <a class="nav-link" href="/register">Register as Student</a>
+	          </li>
+	           <li class="nav-item">
+	          <a class="nav-link" href="/login">Login as Student</a>
+	        </li>
+	           <li class="nav-item">
+	          <a class="nav-link" href="/register_admin">Login as Admin</a>
+	        </li>
+	           <li class="nav-item">
+	          <a class="nav-link" href="http://localhost:8080/">Start Exam</a>
+	        </li>
+	        </li>
+	       </ul>
+	    </div>
+	  </div>
+	</nav>
+	
+	<img src="https://i0.wp.com/www.freestudentprojects.com/wp-content/uploads/2013/04/Online-Examin-Portal.jpg?resize=600%2C400" height="535" width="1366" >
+	<div th:insert="footer.html :: footer"></div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
