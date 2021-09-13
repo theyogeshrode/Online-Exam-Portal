@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	overflow-x: hidden;
+		background-color: lightgray;
+}
+
+.text-box {
+	grid-area: text-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 100%;
+	
+}
+
+.card p {
+	color:black;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.card input {
+	margin-bottom: 20px;
+	height: 30px;
+}
+
+
+
+footer {
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+	text-align: center;
+	line-height: 50px;
+
+}

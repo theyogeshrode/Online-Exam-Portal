@@ -1,0 +1,41 @@
+
+footer {
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+	text-align: center;
+	line-height: 50px;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	overflow-x: hidden;
+		background-color: lightgray;
+}
+
+.main-container {
+	min-height: calc(100vh - 136px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card {
+	width: 100%;
+	max-width: 800px;
+	margin-top: 10px;
+}
+
+.card button {
+	width: 25%;
+}

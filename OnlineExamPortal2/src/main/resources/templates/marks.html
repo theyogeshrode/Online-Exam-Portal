@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" th:href="@{/css/marks.css}">
+	<title>Marks</title>
+</head>
+<body>
+
+
+	<div th:insert="navbar.html :: navbar"></div>
+	<div class="container text-center">
+
+	<div class="main-container container py-5 px-2">
+		<h3 class="bg-success text-center mb-5 p-2 text-light">Student's Marks</h3>
+		
+		<table class="table table-striped table-bordered">
+		<thead class="thead-dark">
+			<tr>
+				<th style="background-color: black; color:white;" >Name</th>
+				<th style="background-color: black; color: white;">Marks</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="score : ${sList}">
+				<td th:text="${score.username}"></td>
+				<td th:text="${score.totalCorrect}"></td>
+			</tr>
+			</tbody>
+		</table>
+		
+	</div>
+	
+	<div th:insert="footer.html :: footer"></div>
+</div>
+<p style="position: fixed; bottom: 20; width:100%; text-align: center"><a class="nav-link" href="http://localhost:9011/admin_page">Go back to Admin Page</a></p>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
